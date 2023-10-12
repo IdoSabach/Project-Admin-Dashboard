@@ -31,6 +31,7 @@ h4{
 
 .flex-now:hover,.head-of-aside:hover{
   color: rgb(245, 239, 255);
+  transform: scale(1.1);
 }
 
 .head-of-aside{
@@ -57,6 +58,10 @@ span{
   margin-right: 15px;
   /* margin-left: 15px; */
   cursor: pointer;
+}
+
+span:hover{
+  transform: scale(1.2);
 }
 
 header{
@@ -133,9 +138,6 @@ button:hover{
 
 article{
   display: flex;
-  /* align-items: center;
-  justify-content: center;
-  width: 100%; */
 }
 
 .title{
@@ -174,10 +176,18 @@ article{
   height: 100%;
   
 }
+.no-aside{
+  padding: 10px;
+}
 
 .top-tit{
   font-weight: 600;
   font-size: 18px;
+}
+.top-tit:hover,.tit-right-top:hover,.title:hover,.titile:hover,.top-on-tit:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.01);
 }
 
 .but-tit{
@@ -223,9 +233,7 @@ article{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
-  
-  
+  padding: 15px;
 }
 
 .top-on-tit{
