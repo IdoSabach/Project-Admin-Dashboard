@@ -7,11 +7,13 @@
   font-family: 'Oxygen', sans-serif;
   font-family: 'Quicksand', sans-serif;
   box-sizing: border-box;
+  
 }
 
 body{
   display: flex;
   background-color: rgb(245, 239, 255);
+  /* width: 100%; */
 }
 
 .head-of-aside{
@@ -21,7 +23,6 @@ body{
 aside{
   width: 35%;
   background-color:rgb(165, 148, 249);
-  overflow: hidden;
 }
 
 h4{
@@ -48,6 +49,7 @@ h4{
   height: 35px;
   color: black;
   margin-left: 15%;
+  overflow: hidden;
 }
 
 span{
@@ -131,7 +133,9 @@ button:hover{
 
 article{
   display: flex;
-  /* height: 100%; */
+  /* align-items: center;
+  justify-content: center;
+  width: 100%; */
 }
 
 .title{
@@ -141,14 +145,19 @@ article{
   font-weight: 700;
 }
 
+.art-left{
+  width: 100%;
+}
+
 .grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows:33% 33% 33%;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-rows:repeat(3, minmax(100px, 1fr));
+  justify-content:center;
   column-gap: 15px;
   row-gap: 15px;
   margin: 15px;
-  height: 500px;
+  height: 90%;
 }
 
 .box-art{
@@ -156,7 +165,7 @@ article{
   background-color: rgb(229, 217, 242);
   border-radius: 15px;
   position: relative;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .aside-in-box{
@@ -180,31 +189,42 @@ article{
   right: 10px;
   bottom: 10px;
 }
-.no-aside{
-  padding: 10px;
-}
 
+/* .art-right{
+  width: 30%;
+} */
 .grid-right{
   display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(2,50%);
+  justify-content:center;
+  column-gap: 15px;
+  row-gap: 15px;
   margin: 15px;
-  grid-template-rows:1fr 1fr;
+  height: 90%;
 }
+
+
 
 .tit-right-top{
   font-size: 24px;
   font-weight: 700;
-  /* margin-bottom: 10px; */
+  margin-bottom: 15px;
+  
 }
 
 .blok{
   background-color: rgb(229, 217, 242);
   border-radius: 10px;
+  
 }
 
 .on-box{
   display: flex;
   align-items: center;
-  padding: 7.5px;
+  justify-content: center;
+  padding: 12px;
+  
   
 }
 
@@ -212,10 +232,10 @@ article{
   font-weight: 600;
 }
 .but-on-tit{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .txt-grid{
  margin: 10px;
- padding: 5px;
+ padding: 10px;
 }
