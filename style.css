@@ -3,11 +3,15 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
+  font-family: 'AR One Sans', sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  
 }
 
 body{
   display: flex;
-  background-color: rgb(212, 212, 212);
+  background-color: rgb(245, 239, 255);
 }
 
 .head-of-aside{
@@ -17,7 +21,7 @@ body{
 aside{
   width: 20%;
   height: 827px;
-  background-color: rgb(180, 226, 226);
+  background-color:rgb(165, 148, 249)
 }
 
 h4{
@@ -25,7 +29,7 @@ h4{
 }
 
 .flex-now:hover,.head-of-aside:hover{
-  color: blue;
+  color: rgb(245, 239, 255);
 }
 
 .head-of-aside{
@@ -57,14 +61,14 @@ main{
 }
 
 header{
-  background-color: white;
+  background-color: rgb(205, 193, 255);
 }
 
 .top-header{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: white;
+  background-color: rgb(205, 193, 255);
   height: 3em;
 }
 
@@ -86,7 +90,7 @@ header{
 .txt{
   width: 500px;
   border-radius: 11px;
-  background-color: rgb(212, 212, 212);
+  background-color: rgb(245, 239, 255);
 }
 
 .down-header{
@@ -116,7 +120,7 @@ h2{
   margin-right: 50px;
 }
 button{
-  background-color: rgb(117, 177, 255);
+  background-color: rgb(245, 239, 255);
   width: 100px;
   height: 30px;
   margin: 20px;
@@ -127,7 +131,7 @@ button{
 }
 button:hover{
   background-color: black;
-  color: rgb(117, 177, 255);
+  color: rgb(205, 193, 255);
 }
 
 article{
@@ -154,15 +158,16 @@ article{
 
 .box1{
   display: flex;
-  background-color: white;
+  background-color: rgb(229, 217, 242);
   border-radius: 15px;
   position: relative;
 }
 
 .aside-in-box{
-  background-color: rgb(255, 200, 0);
+  background-color: rgb(205, 193, 255);
   width: 8px;
   height: 100%;
+  
 }
 
 .top-tit{
@@ -196,7 +201,7 @@ article{
 }
 
 .blok{
-  background-color: white;
+  background-color: rgb(229, 217, 242);
   border-radius: 10px;
 }
 
