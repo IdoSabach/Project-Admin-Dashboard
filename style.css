@@ -49,7 +49,7 @@ h4{
 span{
   height: 25px;
   margin-right: 15px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   cursor: pointer;
 }
 main{
@@ -65,8 +65,7 @@ header{
   align-items: center;
   justify-content: space-around;
   background-color: white;
-  /* margin-bottom: 50px; */
-  height: 100px;
+  height: 3em;
 }
 
 .search{
@@ -133,6 +132,7 @@ button:hover{
 
 article{
   display: flex;
+  height: 100%;
 }
 
 .title{
@@ -142,17 +142,14 @@ article{
   font-weight: 700;
 }
 
-.art-left{
-  width: 180%;
-}
-
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows:150px 150px 150px ;
+  grid-template-rows:33% 33% 33%;
   column-gap: 15px;
   row-gap: 15px;
   margin: 15px;
+  height: 500px;
 }
 
 .box1{
@@ -184,4 +181,40 @@ article{
 }
 .no-aside{
   padding: 10px;
+}
+
+.grid-right{
+  display: grid;
+  margin: 15px;
+  grid-template-rows:1fr 1fr;
+}
+
+.tit-right-top{
+  font-size: 24px;
+  font-weight: 700;
+  /* margin-bottom: 10px; */
+}
+
+.blok{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.on-box{
+  display: flex;
+  align-items: center;
+  padding: 7.5px;
+  
+}
+
+.top-on-tit{
+  font-weight: 600;
+}
+.but-on-tit{
+  font-size: 12px;
+}
+
+.txt-grid{
+ margin: 10px;
+ padding: 5px;
 }
