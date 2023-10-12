@@ -3,16 +3,17 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
+  box-sizing: border-box;
   font-family: 'AR One Sans', sans-serif;
   font-family: 'Oxygen', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-family: 'Quicksand', sans-serif;
-  box-sizing: border-box;
-  
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body{
   display: flex;
-  background-color: rgb(245, 239, 255);
+  background-color: rgb(234, 234, 234);
   /* width: 100%; */
 }
 
@@ -22,7 +23,8 @@ body{
 
 aside{
   width: 35%;
-  background-color:rgb(165, 148, 249);
+  background-color:#8e9aaf;
+  
 }
 
 h4{
@@ -30,7 +32,7 @@ h4{
 }
 
 .flex-now:hover,.head-of-aside:hover{
-  color: rgb(245, 239, 255);
+  color: white;
   transform: scale(1.1);
 }
 
@@ -65,14 +67,14 @@ span:hover{
 }
 
 header{
-  background-color: rgb(205, 193, 255);
+  background-color:white;
 }
 
 .top-header{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(205, 193, 255);
+  background-color: white;
   height: 3em;
 }
 
@@ -94,7 +96,7 @@ header{
 .txt{
   width: 500px;
   border-radius: 11px;
-  background-color: rgb(245, 239, 255);
+  background-color: rgb(234, 234, 234);
 }
 
 .down-header{
@@ -122,7 +124,7 @@ h2{
 }
 
 button{
-  background-color: rgb(245, 239, 255);
+  background-color: #8e9aaf;
   width: 100px;
   height: 30px;
   margin: 20px;
@@ -132,8 +134,8 @@ button{
   cursor: pointer;
 }
 button:hover{
-  background-color: black;
-  color: rgb(205, 193, 255);
+  background-color:#d6d6d6;
+  color: black;
 }
 
 article{
@@ -164,14 +166,15 @@ article{
 
 .box-art{
   display: flex;
-  background-color: rgb(229, 217, 242);
+  background-color: white;
   border-radius: 15px;
   position: relative;
   overflow:hidden;
 }
 
 .aside-in-box{
-  background-color: rgb(205, 193, 255);
+  /* background:linear-gradient(#8e9aaf,white); */
+  background-color: #8e9aaf;
   width: 8px;
   height: 100%;
   
@@ -224,7 +227,7 @@ article{
 }
 
 .blok{
-  background-color: rgb(229, 217, 242);
+  background-color:white;
   border-radius: 10px;
   
 }
