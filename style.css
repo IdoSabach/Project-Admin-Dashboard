@@ -11,7 +11,7 @@ body{
 }
 
 .head-of-aside{
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 aside{
@@ -20,7 +20,11 @@ aside{
   background-color: rgb(180, 226, 226);
 }
 
-h4:hover,span:hover{
+h4{
+  cursor:pointer;
+}
+
+.flex-now:hover,.head-of-aside:hover{
   color: blue;
 }
 
@@ -28,7 +32,6 @@ h4:hover,span:hover{
   display: flex;
   align-items: center;
   margin-left: 15%;
-  
 }
 
 .head-of-aside-main{
@@ -47,6 +50,7 @@ span{
   height: 25px;
   margin-right: 15px;
   margin-left: 15px;
+  cursor: pointer;
 }
 main{
   width: 80%;
@@ -83,6 +87,7 @@ header{
 .txt{
   width: 500px;
   border-radius: 11px;
+  background-color: rgb(212, 212, 212);
 }
 
 .down-header{
@@ -119,8 +124,64 @@ button{
   border-radius: 15px;
   font-weight: 600;
   color: black;
+  cursor: pointer;
 }
 button:hover{
   background-color: black;
   color: rgb(117, 177, 255);
+}
+
+article{
+  display: flex;
+}
+
+.title{
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.art-left{
+  width: 180%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:150px 150px 150px ;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin: 15px;
+}
+
+.box1{
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+}
+
+.aside-in-box{
+  background-color: rgb(255, 200, 0);
+  width: 8px;
+  height: 100%;
+}
+
+.top-tit{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.but-tit{
+  font-size: 14px;
+}
+
+.down-icon{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.no-aside{
+  padding: 10px;
 }
