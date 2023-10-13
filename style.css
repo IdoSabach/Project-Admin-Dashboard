@@ -15,16 +15,22 @@ body{
   display: flex;
   background-color: rgb(234, 234, 234);
   /* width: 100%; */
+  overflow-x: hidden;
 }
 
 .head-of-aside{
   margin-top: 40px;
 }
 
-aside{
-  width: 35%;
+.aside{
+  width: 700px;
   background-color:#8e9aaf;
-  
+  list-style: none;
+}
+
+.aside >[aria-hidden="true"]{
+  font-weight: 700;
+  margin-inline-end: 0.75em;
 }
 
 h4{
@@ -123,7 +129,7 @@ h2{
   margin-right: 20px;
 }
 
-button{
+.btn{
   background-color: #8e9aaf;
   width: 100px;
   height: 30px;
@@ -133,7 +139,7 @@ button{
   color: black;
   cursor: pointer;
 }
-button:hover{
+.btn:hover{
   background-color:#d6d6d6;
   color: black;
 }
@@ -249,4 +255,58 @@ article{
 .txt-grid{
  margin: 10px;
  padding: 10px;
+}
+
+.mobile{
+  display: none;
+}
+
+@media (max-width:1000px) {
+  .txt{
+    width: auto;
+  }
+  .down-header{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aside{
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 40%;
+    /* inset: 0 0 0 30%;  */
+    flex-direction: column;
+    /* padding: min(30vh,10rem) 2em; */
+  }
+
+  /* @supports(backdrop-filter:#8e9aaf(1rem)){
+    .aside{
+      background:#8e9aaf hsl(0 0% 100%/0.1);
+      backdrop-filter:#8e9aaf(1rem);
+    }
+  } */
+
+  .aside[data-visible="true"]{
+    transform: translateX(-100%); 
+  }
+
+  .head-of-aside{
+    margin-top: 60px;
+  }
+
+  .mobile{
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0);
+    /* position: absolute;
+    background-color: red; */
+    /* width: 1em; */
+    /* aspect-ratio: 1; */
+    /* top: 1em;
+    left: 1em; */
+    display: inline;
+    margin-left: 10px;
+    border:0;
+  }
 }

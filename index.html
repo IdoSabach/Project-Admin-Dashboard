@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Oxygen:wght@300&family=Poppins&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
     <title>Dashboard</title> 
   </head>
   <body>
-    <aside>
+    <aside id="aside" class="aside" data-visible="false">
       <div class="head-of-aside">
         <span id="dash" class="material-symbols-outlined">
           app_registration
@@ -73,8 +74,11 @@
     </aside>
 
     <main>
-      <header>
+      <header>  
         <div class="top-header">
+          <button class="mobile" aria-controls="aside" aria-expanded="false" ><span class="sr-only"><span class="material-symbols-outlined">
+            menu
+            </span></span></button>
           <div class="search">
             <span  class="material-symbols-outlined"> search </span>
             <div class="input-search">
@@ -101,9 +105,9 @@
             </div>
           </div>
           <div class="down-left">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
           </div>
         </div>
       </header>
