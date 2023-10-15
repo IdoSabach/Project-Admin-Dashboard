@@ -67,8 +67,9 @@ span{
   cursor: pointer;
 }
 
-span:hover{
-  transform: scale(1.2);
+.img-p:hover,span:hover{
+  transform: scale(1.5);
+  cursor: pointer;
 }
 
 header{
@@ -106,6 +107,7 @@ header{
   border-radius: 11px;
   background-color: #edede9;
 }
+
 
 .down-header{
   display: flex;
@@ -160,9 +162,9 @@ article{
   font-weight: 700;
 }
 
-.art-left{
+/* .art-left{
   width: 100%;
-}
+} */
 
 .grid{
   display: grid;
@@ -181,6 +183,9 @@ article{
   border-radius: 15px;
   position: relative;
   overflow:hidden;
+}
+.box-art:hover{
+  transform: scale(1.01);
 }
 
 .aside-in-box{
@@ -214,13 +219,13 @@ article{
   bottom: 10px;
 }
 
-/* .art-right{
+.art-right{
   width: 30%;
-} */
+}
 .grid-right{
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  grid-template-rows: repeat(2,50%);
+  grid-template-rows: 1fr 1fr 0.3fr;
   justify-content:center;
   column-gap: 15px;
   row-gap: 15px;
@@ -228,13 +233,16 @@ article{
   height: 90%;
 }
 
-
+.picture{
+  width: 300px;
+  border-radius: 35px;
+}
 
 .tit-right-top{
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
-  
+  text-align: center;
 }
 
 .blok{
@@ -269,14 +277,19 @@ article{
 }
 
 .downline{
-  background-color: black;
-  color: white;
-  
+  background-color: #edede9;
+  color: black;
   text-align: center;
 }
-.img{
+.img-p{
   width: 35px;
   margin-right: 15px;
+}
+.img-git{
+  width: 15px;
+}
+.img-git:hover{
+  transform: scale(1.1);
 }
 
 @media (max-width:1000px) {
@@ -346,6 +359,7 @@ article{
   article{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .title,.tit-right-top,.tit-right-top,.down-right,.top-on-tit,.but-on-tit{
@@ -387,5 +401,9 @@ article{
   .down-icon{
     position: absolute;
     bottom: 1px;
+  }
+
+  .picture{
+    width: 350px;
   }
 }
